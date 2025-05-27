@@ -48,7 +48,25 @@ public class Ex_Oper_Cond_2705 {
 //        }
         
         //Desafio 2 – Calculadora de IMC
+        Scanner sc = new Scanner(System.in);
         
+        System.out.println("Peso (Kg): ");
+        double peso = sc.nextDouble();
         
+        System.out.println("Altura (m): ");
+        double altura = sc.nextDouble();
+        
+        //Calculamos sendo o IMC = peso / (altura * altura)
+        double imc = peso / (altura * altura);
+        
+        if (imc < 18.5){
+            System.out.println("Abaixo de Peso");
+        } else if ((imc >= 18.5) && (imc < 25)){
+            System.out.println("Peso Normal");
+        } else if ((imc >= 25) && (imc < 30)) {
+            System.out.println("Sobrepeso");
+        } else {
+            System.out.println("Obesidade");
+        }
     }
 }

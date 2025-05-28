@@ -7,32 +7,26 @@ public class EstruturasRepeticao {
 
     public static void main(String[] args) {
         
-//        String emailUsuario = "admin";
-//        String senhaUsuario = "admin";
-//        
+        //Desafio 1: Soma de Números Positivos
 //        Scanner sc = new Scanner(System.in);
+//        int num = 0, soma = 0;
+//        //Desafio 1: Soma de Números Positivos
+//        while (num >= 0){
+//            soma = soma + num;
+//            System.out.println("Ingressa um numero:");
+//            num = sc.nextInt();
+//        } 
 //        
-//        System.out.println("Informa o usuario: ");
-//        String emailEnt = sc.nextLine();
-//        
-//        System.out.println("Informa a senha: ");
-//        String senhaEnt = sc.nextLine();
-//                
-//        while ((!emailUsuario.equals(emailEnt)) || (!senhaUsuario.equals(senhaEnt))) {
-//            System.out.println("Incorreto, tenta novamente");
-//            
-//            System.out.println("Informa o usuario: ");
-//            emailEnt = sc.nextLine();
-//        
-//            System.out.println("Informa a senha: ");
-//            senhaEnt = sc.nextLine();
-//        }
-//        
-//        System.out.println("Login bem sucedido");
-
-        Calendar calendario = Calendar.getInstance();
-        int numeroDeLaSemana = calendario.get(Calendar.WEEK_OF_YEAR);
-        System.out.println("El número de la semana actual es: " + numeroDeLaSemana);
-
+//        System.out.println("A soma dos numeros: " + soma);
+        
+        //Desafio 2: Verificação de Senha
+        String usuario = "admin";
+        String senha = "senha";
+        
+        int contador = 0;
+        
+        Scanner 
+        
+        
     }
 }

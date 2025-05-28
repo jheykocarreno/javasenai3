@@ -1,6 +1,7 @@
 
 package ex_oper_cond_2705;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Ex_Oper_Cond_2705 {
@@ -48,25 +49,59 @@ public class Ex_Oper_Cond_2705 {
 //        }
         
         //Desafio 2 – Calculadora de IMC
+//        Scanner sc = new Scanner(System.in);
+//        
+//        System.out.println("Peso (Kg): ");
+//        double peso = sc.nextDouble();
+//        
+//        System.out.println("Altura (m): ");
+//        double altura = sc.nextDouble();
+//        
+//        //Calculamos sendo o IMC = peso / (altura * altura)
+//        double imc = peso / (altura * altura);
+//        
+//        if (imc < 18.5){
+//            System.out.println("Abaixo de Peso");
+//        } else if ((imc >= 18.5) && (imc < 25)){
+//            System.out.println("Peso Normal");
+//        } else if ((imc >= 25) && (imc < 30)) {
+//            System.out.println("Sobrepeso");
+//        } else {
+//            System.out.println("Obesidade");
+//        }
+
+        //Desafio 3 – Número Mágico
+//        Scanner sc = new Scanner(System.in);
+//        
+//        System.out.println("Bota um numero do 1 ao 10");
+//        int numero = sc.nextInt();
+//        
+//        if ((numero < 1) || (numero > 10)){
+//            System.out.println("Somente pode ser do 1 ao 10");
+//        } else {      
+//            int gerador = (int)(Math. random() * 10);
+//            
+//            System.out.println(gerador);
+//            if (numero == gerador){
+//                System.out.println("Parabems, acertou");
+//            } else {
+//                System.out.println("Errouuuuuuu");
+//            }
+//        }
+        
+        //Desafio 4 – Classificação de Eleitor
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Peso (Kg): ");
-        double peso = sc.nextDouble();
+        System.out.println("Qual e tua idade: ");
         
-        System.out.println("Altura (m): ");
-        double altura = sc.nextDouble();
+        int idade = sc.nextInt();
         
-        //Calculamos sendo o IMC = peso / (altura * altura)
-        double imc = peso / (altura * altura);
-        
-        if (imc < 18.5){
-            System.out.println("Abaixo de Peso");
-        } else if ((imc >= 18.5) && (imc < 25)){
-            System.out.println("Peso Normal");
-        } else if ((imc >= 25) && (imc < 30)) {
-            System.out.println("Sobrepeso");
+        if ((idade >= 18) && (idade <= 70)){
+            System.out.println("Voto obrigatório");
+        } else if (idade < 16){
+            System.out.println("Não vota");
         } else {
-            System.out.println("Obesidade");
+            System.out.println("Voto facultativo");
         }
     }
 }

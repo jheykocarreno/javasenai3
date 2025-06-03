@@ -10,7 +10,7 @@ public class GerenciadorCompras {
         if (produtos.size() < 10){
              produtos.add(produto);
         } else {
-            System.out.println("Maximo 10 produtos.");
+            System.out.println("Lista cheia!.");
         }  
     }
     
@@ -29,7 +29,7 @@ public class GerenciadorCompras {
             int indice = produtos.indexOf(produtoOld);
             produtos.set(indice, produtoNew);
         } else {
-            System.out.println("Nao existe esse Produto");
+            System.out.println("Produto nao encontrado");
         }
     }
     
@@ -41,7 +41,7 @@ public class GerenciadorCompras {
             int indice = produtos.indexOf(produto);
             produtos.remove(indice);
         } else {
-            System.out.println("Delete nao executado, produto nao existe");
+            System.out.println("Delete nao executado, produto nao encontrado");
         }
     }
 }

@@ -6,6 +6,8 @@ public class GerenciadorNomes {
     
     public void inserirUsuario(int posicao, String nome){
         
+        posicao = posicao - 1;
+
         if (posicao >= 0 && posicao < nomes.length){
             nomes[posicao] = nome;
         } else {

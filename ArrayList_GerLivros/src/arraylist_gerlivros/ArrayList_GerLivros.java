@@ -1,5 +1,6 @@
 package arraylist_gerlivros;
 
+import java.security.Guard;
 import java.util.Scanner;
 
 public class ArrayList_GerLivros {
@@ -48,9 +49,18 @@ public class ArrayList_GerLivros {
                     nome = sc.nextLine();
                     livro.nomeLiv = nome;
                     
-                    gLivros.findLivro(nome);
+                    boolean existe = gLivros.findLivro(nome);
                     
-                    
+                    if (existe){
+                        System.out.print("Novo nome: ");
+                        livro.nomeLiv = sc.nextLine();
+                        System.out.print("Novo autor: ");
+                        livro.autorLiv = sc.nextLine();
+                        System.out.print("Nova descrição: ");
+                        livro.descLiv = sc.nextLine();
+                        
+                        gLivros.updateLivro(livro);
+                    }
                     break;
                     
                 case 3:

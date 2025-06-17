@@ -25,18 +25,14 @@ public class GerenciadorLivros {
     }
     
     public Livros findLivro(String nome){
-        boolean existe = false;
 
         for (Livros livro : livraria) {
             if (livro.nomeLiv.equalsIgnoreCase(nome)) {
                 System.out.println(livro);
-                existe = true;
+                return livro;
             }
         }
-        if (existe){
-            return livro;
-        } else {
-            return livro;
-        }
+        Livros libro = new Livros();
+        return libro;
     }
 }

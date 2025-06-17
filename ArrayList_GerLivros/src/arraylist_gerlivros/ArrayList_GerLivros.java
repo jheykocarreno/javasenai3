@@ -47,11 +47,12 @@ public class ArrayList_GerLivros {
                 case 2:
                     System.out.print("Digite o nome do livro a ser atualizado: ");
                     nome = sc.nextLine();
-                    livro.nomeLiv = nome;
                     
-                    boolean existe = gLivros.findLivro(nome);
+                    livro = gLivros.findLivro(nome);
                     
-                    if (existe){
+                    if (livro.autorLiv != null){
+                        System.out.println("Nao existe o livro");
+                    } else {
                         System.out.print("Novo nome: ");
                         livro.nomeLiv = sc.nextLine();
                         System.out.print("Novo autor: ");
@@ -60,8 +61,9 @@ public class ArrayList_GerLivros {
                         livro.descLiv = sc.nextLine();
                         
                         gLivros.updateLivro(livro);
-                    }
+                }
                     break;
+
                     
                 case 3:
                     gLivros.listLivro();

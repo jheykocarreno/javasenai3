@@ -55,7 +55,8 @@ public class LivrosDaoImpl implements ILivrosDao {
 
     @Override
     public void CreateBook(Livros livro) {
-
+        //SQL PARAM
+        String sql = "INSERT INTO livros (nomeLiv, autoLiv, editoralLiv) INTO ()"
     }
 
     @Override
@@ -89,7 +90,7 @@ public class LivrosDaoImpl implements ILivrosDao {
         } catch (Exception e) {
             throw new RuntimeException("Erro ao buscar livro por ID. " + e.getMessage())
         }
-
-        return null;
     }
+
+
 }
